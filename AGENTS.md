@@ -99,6 +99,7 @@ When writing requirements in `develop-docs/`:
 - Use `docs-review` skill for Sentry style and voice review. See `.claude/skills/docs-review/SKILL.md`
 - Use `technical-docs` skill when writing or reviewing SDK documentation. See `.claude/skills/technical-docs/SKILL.md`
 - Quick starts set `runtime` (for example `node` or `cloudflare`) in their frontmatter. The page then shows a runtime selector at the top that links the quick starts of the same guide for the other runtimes
+- The Node.js, Bun and Deno quick starts have a framework selector that swaps `<PlatformContent switchable />` includes for `platform-includes/<path>/javascript.<framework>.mdx` files. Before changing those files, read the `FrameworkSelector` section in `docs/contributing/pages/components.mdx`
 
 ## LLM-Friendly MD Exports
 
